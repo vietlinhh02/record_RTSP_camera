@@ -11,8 +11,8 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
 sudo ntpdate vn.pool.ntp.org
 
 # Tạo thư mục và thiết lập quyền
-sudo mkdir -p /etc/record/camera
-sudo chmod -R 777 /etc/record
+sudo mkdir -p www/wwwroot/vietlinh.tech/record/camera
+sudo chmod -R 777 www/wwwroot/vietlinh.tech/etc/record
 
 # Tải file cấu hình
 sudo wget --no-check-certificate -P /etc/record/ "https://raw.githubusercontent.com/duchoa23/record_RTSP_camera/main/record/rclone.sh"
