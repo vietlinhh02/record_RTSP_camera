@@ -17,4 +17,4 @@ fi
 sleep 3
 
 # Ghi hình sử dụng giao thức TCP thay vì UDP
-sudo ffmpeg -rtsp_transport tcp -i rtsp://user:pass@tenmiendns:port/profile0 -vcodec copy -r 60 -t 3580 -y "$path/$(date +\%d-\%m-\%Y--\%H-\%M).mp4"
+sudo ffmpeg -rtsp_transport tcp -i rtsp://admin:L20AAF51@113.167.228.194:554/cam/realmonitor?channel=1&subtype=0 -vcodec copy -r 60 -t 3580 -y "$path/$(date +\%d-\%m-\%Y--\%H-\%M).mp4"
