@@ -1,0 +1,17 @@
+# Cấu hình RTSP Camera Recording
+# Copy file này thành /etc/record/record.conf và chỉnh sửa
+
+# URL RTSP camera (bắt buộc)
+RTSP_URL="rtsp://user:password@192.168.1.100:554/cam/realmonitor?channel=1&subtype=0"
+
+# Thư mục lưu video (mặc định: /etc/record/camera)
+RECORD_DIR="/etc/record/camera"
+
+# Thời lượng mỗi file ghi hình tính bằng giây (mặc định: 3580 ~ 1h)
+DURATION="3580"
+
+# Tên remote rclone (mặc định: cam)
+RCLONE_REMOTE="cam"
+
+# Thư mục trên cloud (mặc định: camera)
+RCLONE_FOLDER="camera"
